@@ -38,6 +38,31 @@ sudo bash launcher.sh
 ```
 sudo docker-compose down -v
 ```
+
+## Test project
+Write the below address on your browser:
+```
+http://127.0.0.1:4567/QuickDbTest.php
+```
+Or use the below command on your terminal:
+```
+curl http://127.0.0.1:4567/QuickDbTest.php
+```
+You must get a response like this:
+```
+<pre>
+[
+    {
+        "congratulations": "Success!!!",
+        "stars": "1"
+    },
+    {
+        "congratulations": "You did it!!!",
+        "stars": "2"
+    }
+]</pre>
+```
+
 # Refrences
 https://hub.docker.com/_/microsoft-mssql-server
 
