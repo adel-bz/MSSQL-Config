@@ -1,0 +1,50 @@
+version: '3.8'
+services:
+
+  vero-db:
+    build:
+      context: .
+      dockerfile: db/Dockerfile
+    image: 'vero-db'
+    container_name: vero-db
+    ports:
+        - 127.0.0.1:1433:1433 # Only accessible from localhost
+    environment:
+       ACCEPT_EULA: "Y"
+       SA_PASSWORD: "Un!q@to2023"
+    restart: always
+    networks:
+      vero:
+        ipv4_address: 172.226.0.101
+
+    volumes:
+        - mssql-data:/var/opt/mssql
+
+
+  vero-api:
+    build:
+      context: .
+      dockerfile: api/Dockerfile
+    image: 'vero-api'
+    container_name: vero-api
+    restart: always
+    networks:
+      vero:
+        ipv4_address: 172.226.0.102
+    depends_on:
+      - vero-db
+    ports:
+      - 127.0.0.1:4567:80 #Only accessible from localhost, if you want to connect to "api" container from remote please delete the localhost ip address, "127.0.0.1"
+
+
+volumes:
+  mssql-data:
+
+networks:
+  vero:
+    name: vero
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.226.0.0/24

@@ -4,10 +4,8 @@ FROM mcr.microsoft.com/mssql/server:2022-latest
 WORKDIR /home/mssql/app
 
 # Bundle config source
-COPY . /home/mssql/app
+COPY ./db /home/mssql/app
 
-# Grant permissions for to our scripts to be executable
-RUN chmod +x /home/mssql/app
-RUN chmod +x /home/mssql/app
+EXPOSE 1433
 
 ENTRYPOINT ["./entrypoint.sh"]
