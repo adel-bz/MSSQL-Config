@@ -17,7 +17,7 @@ Write a Dockerfile for the following tasks
 - Add the script ```QuickDbTest.php``` to the web-root folder
 
 
-# Dependices
+# Dependencies
 #### Step 1 
 OS (Ubuntu all versions).
 
@@ -25,7 +25,7 @@ OS (Ubuntu all versions).
 Install [Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-22-04) and [docker-compose](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04) on your machine.
 
 # Usage
-## Clone this repo
+## Clone project
 ```  
 git clone https://github.com/adel-bz/VERO-Digital-Solutions.git
 ```
