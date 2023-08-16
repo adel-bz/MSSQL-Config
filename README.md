@@ -5,6 +5,15 @@ Welcome to the MSSQL-Config project repository! This project aims to provide a c
 I installed dependencies drivers for MSSQL on the container.
 Also, I used Apache as a webserver and a PHP code (QuickDbTest.php) for testing MSSQL Database.
 
+# Configuration
+## API
+API directory includes Apache configs as a webserver and a Dockerfile for installing MSSQL drivers to connect to the database.
+You can use Nginx instead of apache as a websever.
+
+## DB
+DB directory includes config files for creating and configuring Microsoft SQL Server.
+
+If you want changes
 
 # Requirements
 #### Step 1 
