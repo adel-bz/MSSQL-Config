@@ -5,7 +5,7 @@
 - Installation
 - Configuration
 - Usage
-- [Refrences](https://github.com/adel-bz/MSSQL-Config/edit/main/README.md#db)
+- [Refrences](https://github.com/adel-bz/MSSQL-Config#refrences)
 
 
 # Introduction
