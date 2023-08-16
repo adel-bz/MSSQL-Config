@@ -8,13 +8,14 @@ Also, I used Apache as a webserver and a PHP code (QuickDbTest.php) for testing 
 # Configuration
 ## API
 API directory includes Apache configs as a webserver and a Dockerfile for installing MSSQL drivers to connect to the database.
-You can use Nginx instead of apache as a websever.
+You can use Nginx instead of Apache as a websever.
 
 ## DB
 DB directory includes config files for creating and configuring Microsoft SQL Server.
 
-If you want changes
+If you want to change the database name you should change ```db_example``` on ```db/setup.sql``` to your database name. On top of that you should change ```private const db``` on ```QuickDbTest.php```  to your database name.
 
+On the other hand, to change the database password, you should change ```private const pass ``` on ```QuickDbTest.php```  and ```SA_PASSWORD``` on ```docker-compose.yml```.
 # Requirements
 #### Step 1 
 OS: Linux all versions (Ubuntu recommended).
@@ -25,11 +26,11 @@ Install [Docker](https://www.digitalocean.com/community/tutorials/how-to-install
 # Usage
 ## Clone project
 ```  
-git clone https://github.com/adel-bz/VERO-Digital-Solutions.git
+git clone https://github.com/adel-bz/MSSQL-Config.git
 ```
 ## Run project
 ```
-cd VERO-Digital-Solutions
+cd MSSQL-Config
 sudo bash launcher.sh
 ```
 ## Stop project
