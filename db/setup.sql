@@ -4,5 +4,5 @@ Enter custom T-SQL here that would run after SQL Server has started up.
 
 */
 
-CREATE DATABASE db_vero_digital;
+CREATE DATABASE db_example;
 GO
