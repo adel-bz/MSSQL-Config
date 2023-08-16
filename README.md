@@ -1,10 +1,11 @@
 # MSSQL-Config
 
 # Table of Contents
-- [Introduction](https://github.com/adel-bz/MSSQL-Config/edit/main/README.md#introduction)
-- Installation
-- Configuration
-- Usage
+- [Introduction](https://github.com/adel-bz/MSSQL-Config#introduction)
+- [Configuration]
+- [Requirements]
+- [Usage]
+- [Test]
 - [Refrences](https://github.com/adel-bz/MSSQL-Config#refrences)
 
 
@@ -24,6 +25,7 @@ DB directory includes config files for creating and configuring Microsoft SQL Se
 If you want to change the database name you should change ```db_example``` on ```db/setup.sql``` to your database name. On top of that you should change ```private const db``` on ```QuickDbTest.php```  to your database name.
 
 On the other hand, to change the database password, you should change ```private const pass ``` on ```QuickDbTest.php```  and ```SA_PASSWORD``` on ```docker-compose.yml```.
+
 # Requirements
 #### Step 1 
 OS: Linux all versions (Ubuntu recommended).
@@ -46,7 +48,7 @@ sudo bash launcher.sh
 sudo docker-compose down -v
 ```
 
-# Test project
+# Test
 Write the below address on your browser:
 ```
 http://127.0.0.1:4567/QuickDbTest.php
