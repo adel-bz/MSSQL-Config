@@ -2,10 +2,10 @@
 
 # Table of Contents
 - [Introduction](https://github.com/adel-bz/MSSQL-Config#introduction)
-- [Configuration]
-- [Requirements]
-- [Usage]
-- [Test]
+- [Configuration](https://github.com/adel-bz/MSSQL-Config#configuration)
+- [Requirements](https://github.com/adel-bz/MSSQL-Config#requirements)
+- [Usage](https://github.com/adel-bz/MSSQL-Config#usage)
+- [Test](https://github.com/adel-bz/MSSQL-Config#test)
 - [Refrences](https://github.com/adel-bz/MSSQL-Config#refrences)
 
 
