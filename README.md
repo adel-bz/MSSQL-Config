@@ -1,5 +1,13 @@
 # MSSQL-Config
 
+# Table of Contents
+- [Introduction](https://github.com/adel-bz/MSSQL-Config/edit/main/README.md#introduction)
+- Installation
+- Configuration
+- Usage
+- [Refrences](https://github.com/adel-bz/MSSQL-Config/edit/main/README.md#db)
+
+
 # Introduction
 Welcome to the MSSQL-Config project repository! This project aims to provide a convenient and standardized way to configure and manage Microsoft SQL Server instances with Docker.
 I installed dependencies drivers for MSSQL on the container.
