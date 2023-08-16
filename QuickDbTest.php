@@ -3,10 +3,10 @@
 
 final class QuickDbTest
 {
-    private const host = 'db'; /* I changed the host to 'vero-db' instead of 'localhost' for connection api to database. */
+    private const host = 'db'; /* I changed the host to 'db' instead of 'localhost' for connection api to database. */
     private const db = 'db_example';
-    private const user = 'changeme';
-    private const pass = 'changeme';
+    private const user = 'sa';
+    private const pass = 'Un!q@to2023';
 
     private function connectToDatabase() {
         try {

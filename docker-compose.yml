@@ -9,10 +9,10 @@ services:
     container_name: db
     environment:
        ACCEPT_EULA: "Y"
-       SA_PASSWORD: "changeme"
+       SA_PASSWORD: "Un!q@to2023"
     restart: always
     networks:
-      vero:
+      example:
         ipv4_address: 172.226.0.101
 
     volumes:
