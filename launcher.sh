@@ -6,4 +6,4 @@ chmod +x ./db/configure-db.sh
 
 
 # Start
-docker-compose up -d
+docker compose up -d
